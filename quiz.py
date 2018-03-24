@@ -7,26 +7,26 @@ Builder.load_string("""
     canvas.before:
         BorderImage:
             border: 10, 10, 10, 10
-            source: 'images.jpeg'
+            source: 'doom.jpg'
             pos: self.pos
             size: self.size
-        FloatLayout:
-            Button:
-                size_hint: None, None
-                text: 'Start'
-                pos:100, 75
-                width: '250sp'
-                font_size: '40sp'
-                on_press: 
-                    root.manager.transition.direction = 'left'
-                    root.manager.current = 'game'
-            Button:
-                size_hint: None, None
-                pos:450, 75
-                width: '250sp'
-                font_size: '40sp'
-                text: 'Quit'
-                on_press: root.dismiss()
+    FloatLayout:
+        Button:
+            size_hint: None, None
+            text: 'Start'
+            pos:100, 75
+            width: '250sp'
+            font_size: '40sp'
+            on_press: 
+                root.manager.transition.direction = 'left'
+                root.manager.current = 'game'
+        Button:
+            size_hint: None, None
+            pos:450, 75
+            width: '250sp'
+            font_size: '40sp'
+            text: 'Quit'
+            on_press: root.dismiss()
 
 <SettingsScreen>:
     FloatLayout:  
