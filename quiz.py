@@ -7,12 +7,12 @@ Builder.load_file("quiz2.kv")
 class MenuScreen(Screen):
     pass
 
-class SettingsScreen(Screen):
+class GameScreen(Screen):
     pass
 
 sm = ScreenManager()
 sm.add_widget(MenuScreen(name='menu'))
-sm.add_widget(SettingsScreen(name='game'))
+sm.add_widget(GameScreen(name='game'))
 
 class TestApp(App):
 
