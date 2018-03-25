@@ -14,10 +14,10 @@ sm = ScreenManager()
 sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(GameScreen(name='game'))
 
-class TestApp(App):
+class QuizApp(App):
 
     def build(self):
         return sm
 
 if __name__ == '__main__':
-    TestApp().run()
+    QuizApp().run()
